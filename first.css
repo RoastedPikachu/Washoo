@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background:#fafafa;
+  font-size:16px;
+  font-weight:400;
+}
+
+a {
+  text-decoration:none;
+  transition: color 600ms ease;
+}
+
+img {
+  max-width:100%;
+}
+
+header {
+  width:90%;
+  padding: 20px 5%;
+  background:#ffffff;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:2;
+}
+
+header > .logo {
+  font-size:25px;
+  font-weight:700;
+}
+
+header > .nav {
+  position:relative;
+  margin-left:-50px;
+}
+
+header > .nav a {
+  margin:0 15px;
+  display:inline-block;
+  color: #a3a3a3;
+}
+
+header > .nav a:hover {
+  color: #4f4e4e;
+}
+
+header > .menu {
+  cursor:pointer;
+  color: #a3a3a3;
+  font-size:23px;
+}
+
+header > .menu:hover {
+  color: #4f4e4e;
+}
+
+/* Стили для JavaScript */
+
+.fixed {
+  position:sticky;
+  top:0;
+  left:0;
+  border-bottom: 2px solid silver;
+}
+
+#hidden-menu {
+  width:300px;
+  position:fixed;
+  top:0;
+  right:-300px;
+  height:100vh;
+  background:white;
+  z-index:10;
+  text-align:center;
+}
+
+#hidden-menu .close {
+  font-size:35px;
+  float:right;
+  margin:10px 20px;
+  font-weight:bold;
+  cursor:pointer;
+  transition: color 600ms ease;
+}
+
+#hidden-menu .close:hover {
+  color:grey;
+}
+
+#hidden-menu h2 {
+  margin-top:100px;
+  margin-bottom:20px;
+}
+
+#hidden-menu ul {
+  list-style:none;
+}
+
+#hidden-menu li {
+  display:block;
+  margin-bottom:10px;
+}
+
+#hidden-menu li a {
+  color:#333;
+}
+
+#hidden-menu li a:hover {
+  color: #ccc;
+}
+
+/*  */
+
+.full-page,
+.bg-fixed {
+  height:95vh;
+  background:url("img/main-bg.jpg") no-repeat center center;
+  background-attachment: fixed;
+  background-size:cover;
+  background-blend-mode: multiply;
+  background-color: #3b3b3b;
+  text-align:center;
+  color:white;
+}
+
+.full-page h1 {
+  padding-top:250px;
+  font-size:45px;
+  width:500px;
+  margin:0 auto;
+}
+
+.full-page h3 {
+  margin:20px 0;
+  font-size:15px;
+  text-transform:uppercase;
+  font-weight:500;
+  color:#ccc;
+}
+
+.full-page button,
+.bg-fixed button {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border:0px;
+  font-size:16px;
+  cursor:pointer;
+  background:#ffc107;
+  color: #704404;
+  font-weight:600;
+  transition: background 600ms ease;
+}
+
+.full-page button i,
+.bg-fixed button i {
+  margin-left: 5px;
+  transition: margin-left 600ms ease;
+}
+
+.full-page button:hover i,
+.bg-fixed button:hover i {
+  margin-left:15px;
+  color:white;
+}
+
+.full-page button:hover,
+.bg-fixed button:hover {
+  background: #ff9800;
+}
+
+.gallery {
+  width:70%;
+  margin: 50px 15%;
+  position:relative;
+  left:100px;
+}
+
+.gallery .arrow-prev,
+.gallery .arrow-next {
+  font-size:28px;
+  position:absolute;
+  transition: all 600ms ease;
+  cursor:pointer;
+}
+
+.gallery .arrow-prev {
+  left:-5vw;
+  top:50%;
+}
+
+.gallery .arrow-next {
+  right:3%;
+  top:52%;
+}
+
+.gallery .arrow-prev:hover,
+.gallery .arrow-next:hover {
+  transform: scale(1.1);
+}
+
+.gallery div {
+  margin-top:10px;
+  margin-right:50px;
+}
+
+.slider div {
+  width:200px;
+  background-size:cover;
+}
+
+.features {
+  display:flex;
+  justify-content:space-between;
+  width:70%;
+  margin-left:15%;
+}
+
+.features > div{
+  width:300px;
+  text-align:center;
+  margin: 50px 20px;
+}
+
+.features > div img {
+  width:150px;
+  margin-bottom: 10px;
+}
+
+.features > div h4 {
+  font-size: 22px;
+  font-weight:700;
+  margin-bottom: 10px;
+  color:#454545;
+}
+
+.features > div p {
+  font-weight:200;
+}
+
+.bg-fixed {
+  height: 300px;
+  color: #333;
+  background-image: url('img/bg-fixed.jpg');
+}
+
+.bg-fixed h3 {
+  font-size: 25px;
+  padding-top:110px;
+  margin-bottom: 20px;
+  color:white;
+}
+
+.bg-fixed input {
+  padding: 14px 20px;
+  width:300px;
+  height:20px;
+  font-size:14px;
+  border: 0px;
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+.bg-fixed button {
+  margin-left:10px;
+}
+
+footer {
+  width:90%;
+  padding: 50px 5%;
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+footer .up-btn,
+footer .social div {
+  width:50px;
+  height:50px;
+  text-align:center;
+  line-height:50px;
+  border-radius:50%;
+  background:#eee;
+  border:1px solid silver;
+  cursor:pointer;
+  color: #3b3b3b;
+  transition: transform 600ms ease;
+}
+
+footer .up-btn:hover,
+footer .social div:hover {
+  transform: translateY(-10px);
+}
+
+footer .social div {
+  display:inline-block;
+  margin-left:15px;
+  font-size:20px;
+}
+
+footer > p {
+  margin-left:150px;
+}
