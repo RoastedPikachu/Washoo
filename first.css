@@ -178,6 +178,7 @@ header > .menu:hover {
 
 .gallery {
   width:70%;
+  height: 400px;
   margin: 0px 15%;
   position:relative;
   left:100px;
